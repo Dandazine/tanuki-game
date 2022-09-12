@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize-fwd.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section class="game-section">
+            <audio src="./audio/mop-a-frying-pan.mp3" class="sound"></audio>
+            <audio src="./audio/jazz-happy.mp3" class="music" loop></audio>
+            <div class="main screen">
+                <div class="titlescreen">
+                    <h1>Stinky Tanuki</h1>
+                    <div>
+                        <button class="start-game-btn">Start Game</button>
+                        <button class="info-btn">Info</button>
+                    </div>
+                </div>
+                <div class="info-div" style="display:none">
+                    <p>After playing in the mud all day, Tanuki is very stinky. You must give her a good scrub before bedtime. Unfortunately for you, however, Tanuki HATES getting cleaned. She will run away every chance she gets, but it is your goal to make sure she's clean before night time rolls around. <br> In every difficulty of the game, you must click on Tanuki to scrub her, but the different difficulties determine how much energy she has, how dirty she is, and also how much time you have left before bed time. All these info will be displayed on the top left as you play. </p>
+                    <p class="warning"><span class="bad">Caution!</span> This game has fast moving images. Please play at your own risk.</p>
+                    <button class="close-info">Close</button>
+                </div>
+            </div>
+
+            <div class="opening screen">
+                <div class="name-input">
+                    <div>
+                        <label for="player-name">Enter your name!</label><br>
+                        <input type="name" id="player-name" name="player-name">
+                    </div>
+                    <div class="diff-btns">
+                        <button id="easy">Easy</button>
+                        <button id="medium">Medium</button>
+                        <button id="hard">Hard</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game screen">
+                <div class="display-btns">
+                    <p id="time-display">
+                        Time Left: <span class="minutes">--</span>:<span class="seconds">--</span>
+                    </p>
+                    <p id="name-display">
+                        Player Name: 
+                    </p>
+                    <p id="level-display">
+                        Difficulty: 
+                    </p>
+                    <p id="score-display">Current Score: --</p>
+                    <p>Score Needed: <span id="score-need">--</span></p>
+                    <button class="gametoggle">Start</button>
+                    <button class="quit-game-btn">Quit</button>
+                </div>
+                <div class="bubble">
+                    <img src="./images/bubbles.gif" alt="gif of bubbles moving up">
+                </div>
+                <div class="dog">
+                    <img src="./images/dog.png" alt="Dog sticking out tongue" id="dog" class='dog'>
+                </div>
+                <div class="cursor">
+                    <img src="./images/sponge.png" alt="drawing of a sponge">
+                </div>
+            </div>
+
+            <div class="game-over screen">
+                <div class="go-text">
+                    <h2>Thanks for playing!</h2>
+                    <button class="restart">
+                        Restart
+                    </button>
+                    <button class="quit-menu">
+                        Quit to Menu
+                    </button>
+                    <h3>Credit:</h3>
+                    <ul>
+                        <li>Bubbles: <a href="https://aj-item-worth.fandom.com/wiki/User_blog:Saveberries490/Underwater_coding">Unknown Author</a></li>
+                        <li>Background: <a href="https://unsplash.com/photos/Aac7IlKnYX8">Steven Ungermann</a></li>
+                        <li>Scrubbing Sound: <a href="https://pixabay.com/sound-effects/search/sponge/"> Mickael Leroi</a></li>
+                        <li>Music: <a href="https://pixabay.com/music/search/piano%20happy/?order=None"> Music For Videos</a></li>
+                        <li>Code help: Josh Solomon, Josh and Jed Borseth, and Harland Jones</li>
+                        <li>Everything else: Me</li>
+                    </ul>
+                </div>
+            </div>
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

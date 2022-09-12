@@ -1,0 +1,137 @@
+/* global  */
+.game-section{
+    width:100%;
+    height: 100vh;
+    overflow:hidden;
+}
+
+body{
+    font-size: 1.2rem;
+}
+
+button{
+    padding: 0.2rem;
+}
+
+a, a:visited{
+    text-decoration: none;
+    color: #cd840e;
+}
+
+a:hover{
+    color:#ebac47;
+}
+
+/* start screen */
+
+h1{
+    text-align: center;
+    text-shadow: #f2f2f2 1px 1px 10px;
+    text-decoration: underline;
+}
+
+.titlescreen div{
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.info-div{
+    background-color: rgba(0, 0 ,0, 0.6);
+    border-radius: 10px;
+    color:#f2f2f2;
+    max-width: 30rem;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.warning{
+    font-weight: 700;
+    margin: 1rem;
+}
+
+.bad{
+    color:rgb(249, 70, 70);
+    text-shadow: black 1px 1px 1px;
+}
+
+/* opening screen  */
+.name-input{
+    background-color: rgba(0, 0 ,0, 0.6);
+    border-radius: 10px;
+    color:#f2f2f2;
+    max-width: 30rem;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+
+/* game screen */
+.screen{
+    overflow:hidden;
+    width:100%;
+    height:100%;
+    position: relative;
+    background: url('../images/bg-steven-ungermann-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+
+.bubble{
+    display:none;
+    transform: translate(-50%,-50%);
+    z-index:2;
+    height: 140px;
+    width: 140px;
+}
+
+.dog{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    transition: ease-in-out 1s;
+}
+
+.cursor{
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    height: 70px;
+    width: 70px;
+}
+
+.cursor, .bubble{
+    position: absolute;
+    pointer-events: none;
+}
+
+.display-btns{
+    background-color: rgba(0, 0 ,0, 0.6);
+    border-radius: 10px;
+    color:#f2f2f2;
+    padding: 2rem;
+    max-width:16.3rem;
+}
+
+.minutes,.seconds{
+    color:#cd840e;
+}
+
+/* game over screen  */
+
+.go-text{
+    background-color: rgba(0, 0 ,0, 0.6);
+    box-shadow: 2px, 2px, 3px, black;
+    border-radius: 10px;
+    color: #f2f2f2;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding: 4rem;
+}
